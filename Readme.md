@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Юрий](https://up.htmlacademy.ru/htmlcss/29/user/813413).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан] (https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
