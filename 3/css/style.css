@@ -161,7 +161,7 @@ h1{
 .catalog-item:last-child{
    height: 266px;
    width: 620px;
-   background-image: url(/img/perforator1.jpg);
+   background-image: url(../img/perforator1.jpg);
 }
 
 .catalog-item:last-child h3 {
@@ -321,7 +321,7 @@ h1{
 
 /*Выстроить тире по центру*/
 .contacts-company li{
-   list-style-image: url(/img/liststyle.png);
+   list-style-image: url(../img/liststyle.png);
 }
 
 .contacts-info-description{
