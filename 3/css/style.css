@@ -28,7 +28,7 @@ body {
    font-size: 14px;
    line-height: 24px;
    font-weight: 700;
-   color: black; /* Заменить!!!*/
+   color: var(--basic-black);
    background-color: var(--basic-white);
    background-repeat: no-repeat;
 }
@@ -132,6 +132,12 @@ h1{
    border: 7px solid var(--basic-white);
 }
 
+.catalog-item h3{
+   color: var(--basic-white);
+   font-size: 24px;
+   line-height: 30px;
+}
+
 .catalog-item:first-child {
    background-color: var(--basic-orange);
 }
@@ -173,6 +179,17 @@ h1{
    font-size: 18px;
    line-height: 24px;
 }
+
+.button-catalog-item {
+   width: 135px;
+   height: 38px;
+}
+
+.button-catalog-item a{
+   text-transform: uppercase;
+   color: var(--basic-white);
+}
+
 
 /* Стили текста красных кнопок*/
 .catalog-item:last-child a,
@@ -248,6 +265,8 @@ h1{
    width: 185px;
    height: 43px;
 }
+
+/* скрыть текст*/
 
 .manufacturers-list h3{
    text-indent: 100%;
@@ -336,18 +355,47 @@ h1{
 
 .footer-address{
    color: var(--basic-white);
+}
+
+.footer-address,
+.footer-navigation-list a{
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
    line-height: 24px;
 }
 
-
 .address-block {
    width: 321px;
    height: 49px;
 }
 
+.footer-navigation-list .footer-white-link{
+   color: var(--basic-white);
+}
+
+.footer-navigation-list .footer-yellow-link {
+   color: var(--basic-yellow);
+}
+
 .deep-footer {
    background-color: var(--basic-gray-darker);
+}
+
+.rights-text,
+.footer-social a,
+.footer-feedback p,
+.footer-feedback a,
+.footer-copyright p,
+.footer-copyright a {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 18px;
+   color: var(--basic-white);
+}
+
+.footer-feedback a,
+.footer-copyright a {
+   color: var(--basic-yellow);
 }
