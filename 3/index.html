@@ -18,7 +18,9 @@
         </button>
         <!--Форма строки поиска-->
         <ul class="main-header-list">
-          <li><a href="#">Закладки</a></li>
+          <li>
+            <a href="#">Закладки</a>
+          </li>
           <li><a href="#">Корзина</a></li>
           <li><a href="#">Оформить заказ</a></li>
         </ul>
@@ -31,7 +33,9 @@
             и инструментов для ремонта
         </h1>
         <div class="phone-call">
-          <a class="phone-call-info" href="tel:+78125550555"><h2>+7 (812) 555-05-55</h2></a> 
+          <div class="phone-call-border">
+            <a class="phone-call-info" href="tel:+78125550555"><h2>+7 (812) 555-05-55</h2></a> 
+          </div>
           <p>г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-menu">
@@ -62,23 +66,29 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3>Материалы</h3>
-            <button type="button" class="button-catalog-item button-yellow"><a href="#">на любой вкус</a></button>
+            <a class="button-catalog-item button-yellow" href="#" >на любой вкус</a>
+            <div class="materials-icon"></div>
+            <div class="new-item"></div>
           </li>
           <li class="catalog-item">
             <h3>Инструмент</h3>
-            <button type="button" class="button-catalog-item button-blue"><a href="#">на все случаи</a></button>
+            <a class="button-catalog-item button-blue" href="#">на все случаи</a>
+            <div class="instrument-icon"></div>
           </li>
           <li class="catalog-item"> 
             <h3>Техника</h3>
-            <button type="button" class="button-catalog-item button-pink"><a href="#">для стройки</a></button>
+            <a class="button-catalog-item button-pink" href="#">для стройки</a>
+            <div class="technic-icon"></div>
           </li>
           <li class="catalog-item">
             <h3>Скидки 50%</h3>
-            <button type="button" class="button-catalog-item button-green"><a href="#">на 350 товаров</a></button>
+            <a class="button-catalog-item button-green" href="#">на 350 товаров</a>
+            <div class="discount-icon"></div>
           </li>
           <li class="catalog-item">
             <h3>Доставка</h3>
-            <button type="button" class="button-catalog-item button-orange"><a href="#">бесплатно</a></button>
+            <a class="button-catalog-item button-orange" href="#">бесплатно</a>
+            <div class="delivery-icon"></div>
           </li>
           <li class="catalog-item">
             <h3>Перфораторы</h3>
@@ -120,6 +130,7 @@
                 <s>22500 Р.</s>
                 <button type="button" class="button-red-buy"><a class="products-price" href="#">15500 Р.</a></button>
               </p>
+              <div class="new-catalog-item"></div>
             </li>
             <li class="products-type">
               <a href="#">
@@ -143,6 +154,7 @@
               <p>
                 <button type="button" class="button-red-buy"><a class="products-price" href="#">12500 Р.</a></button>
               </p>
+              <div class="new-catalog-item"></div>
             </li>
           </ul>
         </div>    
@@ -244,9 +256,7 @@
                 Кредитные консультанты придут вам на помощь.</p>
           </li>
         </ul>
-        <div class="truck">
-          <img src="img/track.png" alt="Грузовик">
-        </div>
+        <div class="truck"></div>
       </section>
 
       <section class="contacts">
@@ -314,13 +324,19 @@
         <div class="footer-social">
           <ul>
             <li>
-              <a class="social-button" href="#">Вконтакте</a>
+              <div class="vk-icon">
+                <a class="social-button" href="https://vk.com"><img class="vk-link" src="/img/icons/vk.svg" alt="Вконтакте"></a>
+              </div>
             </li>
             <li>
-              <a class="social-button" href="#">Фейсбук</a>
+              <div class="fb-icon">
+                <a class="social-button" href="https://facebook.com"><img class="fb-link" src="/img/icons/fb.svg" alt="Фейсбук"></a>
+              </div>
             </li>
             <li>
-              <a class="social-button" href="#">Инстаграм</a>
+              <div class="insta-icon">
+                <a class="social-button" href="https://instagram.com"><img class="int-link" src="/img/icons/inst.svg" alt="Инстаграм"></a>
+              </div>
             </li>
           </ul>
         </div>
