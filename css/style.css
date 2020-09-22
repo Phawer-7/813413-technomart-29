@@ -54,7 +54,7 @@ li {
 
 img {
    max-width: 100%;
-   height: auto;
+
 }
 
 h1{
@@ -67,26 +67,10 @@ h1{
 
 /* Main navigation */
 
-.button-logo {
-   background-color: var(--basic-red);
-   width: 220px;
-   height: 47px;
-   border: 0;
-}
-
-.button-logo a{
-   font-size: 21px;
-   text-transform: uppercase;
-   color: var(--basic-white);
-}
-
 .main-header-menu {
    background: var(--basic-gray-darker);
 }
 
-.main-header-list {
-   color: var(--basic-white);
-}
 
 .main-header-list a:hover,
 .main-header-list a:visited,
@@ -102,6 +86,10 @@ h1{
 .main-header-info,
 .services {
    background-color: var(--basic-extra-light);
+}
+
+.main-logo:hover{
+   opacity: 0.24;
 }
 
 .phone-call p{
@@ -130,8 +118,8 @@ h1{
    color: var(--basic-black);
    font-size: 21px;
    line-height: 21px;
+   
 }
-
 
 .user-menu-list a:hover{
    color: var(--basic-red);
@@ -141,9 +129,8 @@ h1{
    color: var(--basic-white-active);
 }
 
-
 .login-link{
-   background: url(/img/icons/icon-login.svg) no-repeat;
+   background: url(../img/icon-logout.svg) no-repeat;
    padding-left: 26px;
 }
 
@@ -162,13 +149,9 @@ h1{
 
 /* Главные кнопки Header */
 
-.button-logo:hover{
-   background-color: var(--basic-red-click);
-}
-
 
 .main-header-list li:first-child{
-   background: url(/img/icons/icon-bookmark.svg) no-repeat 5px;
+   background: url(../img/icon-bookmark.svg) no-repeat 5px;
    padding-left: 25px;
 }
 
@@ -176,18 +159,8 @@ h1{
    background-color: var(--basic-black-active);
 }
 
-
+.main-header-list li:last-child,
 .main-header-list li:nth-child(2){
-   background: url(/img/icons/icon-cart.svg) no-repeat 4px;
-   padding-left: 25px;
-}
-
-.main-header-list li:nth-child(2):active{
-   background-color: var(--basic-black-active);
-}
-
-.main-header-list li:last-child{
-   background-color: var(--basic-green);
    width: 150px;
    color: white;
    padding: 10px;
@@ -196,6 +169,26 @@ h1{
    text-align: center;
 }
 
+.main-header-list li:nth-child(2){
+   background: url(../img/icon-cart.svg) no-repeat 4px;
+   background-color: var(--basic-red);
+   padding-left: 25px;
+   padding: 10px;
+}
+
+.main-header-list li:nth-child(2):hover{
+   color: var(--basic-red-hover);
+}
+
+.main-header-list li:nth-child(2):active{
+   background-color: var(--basic-red-click);
+}
+
+.main-header-list li:last-child{
+   background-color: var(--basic-green);
+}
+
+
 .main-header-list li:last-child:hover{
    background-color: var(--basic-green-active);
 }
@@ -203,6 +196,7 @@ h1{
 .main-header-list a:last-child:active{
    color: var(--basic-white-opacity);
 }
+
 
 /* Стилизация кнопок субменю-навигации header */
 
@@ -245,79 +239,18 @@ h1{
    position: relative;
 }
 
-.materials-icon,
-.instrument-icon,
-.technic-icon,
-.discount-icon,
-.delivery-icon {
-   position: absolute;
-}
-
-.materials-icon{
-   width:45px;
-   height: 65px;
-   background: url(/img/materials.svg) no-repeat;
-   left: 213px;
-   top: 27px;
-}
-
 /* Флажок нового товара */
-
-.new-item{
-   position: absolute;
-   background: url(/img/new.svg) no-repeat;
-   width: 70px;
-   height: 70px;
-   left: 230px;
-   top: 0;
-}
-
-.instrument-icon {
-   width:75px;
-   height: 61px;
-   background: url(/img/instruments.svg) no-repeat;
-   left: 194px;
-   top: 28px;
-}
-
-.technic-icon {
-   width:78px;
-   height: 62px;
-   background: url(/img/tractor.svg) no-repeat;
-   left: 194px;
-   top: 30px;
-}
-
-.discount-icon {
-   width:59px;
-   height: 72px;
-   background: url(/img/basket.svg) no-repeat;
-   left: 196px;
-   top: 25px;
-}
-
-.delivery-icon {
-   width: 78px;
-   height: 63px;
-   background: url(/img/delivery.svg) no-repeat;
-   left: 191px;
-   top: 38px;
-}
 
 .products-type {
    position: relative;
    
 }
 
-.new-catalog-item{
-   position: absolute;
-   background: url(/img/new.svg) no-repeat;
-   width: 70px;
-   height: 70px;
-   left: 150px;
-   top: 0;
+.materials-icon::before{
+   background-image: url("../img/materials.svg") no-repeat 5px;
+   width: 100;
+   height: 100;
 }
-
 
 .catalog-item:nth-child(2){
    background-color: var(--basic-blue);
@@ -477,6 +410,7 @@ h1{
    width: 185px;
    height: 43px;
    margin: auto;
+   color: var(--basic-black);
 }
 
 /* изображение грузовика*/
@@ -677,3 +611,33 @@ h1{
 }
 
 /* Замена цвета иконок*/
+
+/* Каталог */
+
+.product-button {
+   width: 135px;
+   height: 38px;
+   border-radius: 2px;
+}
+
+.buy-button{
+   background-color: var(--basic-green);
+}
+
+.product-button a{
+   font-size: 14px;
+   line-height: 18px;
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
+   color: var(--basic-white);
+}
+
+.bookmark-button{
+   background-color: var(--basic-white);
+   border: 2px solid var(--basic-green);
+}
+
+.bookmark-button a{
+   color: var(--basic-black);
+}
