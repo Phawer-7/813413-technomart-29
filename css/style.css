@@ -414,10 +414,8 @@ h1{
 }
 
 /* изображение грузовика*/
-.truck{
-   width: 468px;
-   height: 261px;
-   background-image: url("../img/truck.png");
+.services-advantages::after{
+   content: url("../img/truck.png");
 }
 
 
