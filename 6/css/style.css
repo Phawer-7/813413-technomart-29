@@ -685,8 +685,16 @@ h1{
    color: var(--basic-yellow);
 }
 
-.footer-white-link:hover,
-.footer-yellow-link:hover {
+.footer-white-link li:first-child:hover,
+.footer-white-link li:nth-child(2):hover,
+.footer-white-link li:nth-child(3):hover,
+.footer-white-link li:nth-child(4):hover,
+.footer-white-link li:last-child:hover,
+.footer-yellow-link li:first-child:hover,
+.footer-yellow-link li:nth-child(2):hover,
+.footer-yellow-link li:nth-child(3):hover,
+.footer-yellow-link li:nth-child(4):hover,
+.footer-yellow-link li:last-child:hover {
    text-decoration: underline;
 }
 
