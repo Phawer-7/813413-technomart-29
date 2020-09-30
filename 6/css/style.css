@@ -144,10 +144,14 @@ h1{
    
 }
 
+.user-menu{
+   justify-self: end;
+}
+
 .user-menu-list{
    display: flex;
    margin: 0;
-   float: right;
+   padding: 0;
 }
 
 .user-menu-list a:hover{
@@ -380,7 +384,6 @@ h1{
    background: var(--basic-red);
    border: 0;
    margin-left: auto;
-   margin-right: 14px;
    padding: 11px 24px 9px;
 }
 
@@ -392,12 +395,11 @@ h1{
    background-color: var(--basic-red-click);
 }
 
-.products-header,
-.manufacturers-header{
+.inner-container{
    display: flex;
    align-items: center;
    background-color: var(--basic-peach);
-   padding: 29px 0 30px;
+   padding: 29px 28px 30px;
 }
 
 .manufacturers-type{
@@ -408,13 +410,11 @@ h1{
 .products-header h2,
 .manufacturers-header h2{
    margin:0;
-   padding-left: 28px;
 }
 
 .products-header-button,
 .manufacturers-button{
    margin-left: auto;
-   margin-right: 14px;
    padding: 11px 24px 9px;
 }
 
@@ -638,23 +638,6 @@ h1{
    padding: 0 0 64px 0;
 }
 
-.footer-white-link,
-.footer-yellow-link {
-   display: flex;
-}
-
-.footer-white-link li:not(:last-child) {
-   padding-right: 60px;
-}
-
-.footer-yellow-link li:not(:first-child){
-   padding-left: 60px;
-}
-
-.footer-yellow-link li{
-   padding-top: 34px;
-}
-
 .footer-navigation{
    padding-top: 37px;
 }
@@ -663,7 +646,6 @@ h1{
    margin:0;
    padding: 0;
 }
-
 
 .page-footer{
    background-color: var(--basic-gray-lighter);
@@ -790,6 +772,24 @@ h1{
 
 .header-logo-icon:hover{
    opacity: 0.24;
+}
+
+.footer-white-link,
+.footer-yellow-link {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.footer-white-link li{
+   margin-left: 58px;
+}
+
+.footer-yellow-link li{
+   margin-left: 58px;;
+}
+
+.yellow-container {
+   margin: 34px 0 0 0;
 }
 
 /* Замена цвета иконок*/
