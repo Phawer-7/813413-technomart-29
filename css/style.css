@@ -256,7 +256,6 @@ h1{
 
 .main-header-submenu {
    background-color: var(--basic-gray-lighter);
-   margin-top: 20px;
 }
 
 .site-navigation{
@@ -264,6 +263,35 @@ h1{
    margin: 0;
 }
 
+.main-navigation {
+   margin-top: 17px;
+}
+
+.header-bookmark::before{
+   content: "";
+   width: 14px;
+   height: 15px;
+   background-image: url("../img/icon-bookmark.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   position: absolute;
+   top: 13px;
+   left: 20px;
+   opacity: 0.3;
+}
+
+.header-basket::before{
+   content: "";
+   width: 15px;
+   height: 15px;
+   background-image: url("../img/icon-cart.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   position: absolute;
+   top: 13px;
+   left: 24px;
+   opacity: 0.3;
+}
 
 
 /* Главные кнопки навигации Header */
@@ -290,6 +318,7 @@ h1{
    padding: 10px 0;
    text-decoration: none;
    text-align: center;
+   position: relative;
 }
 
 .main-header-list li:nth-child(2):active,
