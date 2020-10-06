@@ -68,25 +68,35 @@
       <main class="main-container">
         <section class="catalog container">
           <ul class="catalog-list">
-            <li class="catalog-item icon-1">
-              <h3>Материалы</h3>
-              <a class="button-catalog-item button-yellow" href="#" >на любой вкус</a>
+            <li class="catalog-item ">
+              <div class="button-catalog-container yellow-icon">
+                <h3>Материалы</h3>
+                <a class="button-catalog-item button-yellow" href="#" >на любой вкус</a>
+              </div>
             </li>
             <li class="catalog-item icon-2">
-              <h3>Инструмент</h3>
-              <a class="button-catalog-item button-blue" href="#">на все случаи</a>
+              <div class="button-catalog-container blue-icon">
+                <h3>Инструмент</h3>
+                <a class="button-catalog-item button-blue" href="#">на все случаи</a>
+              </div>
             </li>
             <li class="catalog-item icon-3"> 
-              <h3>Техника</h3>
-              <a class="button-catalog-item button-pink" href="#">для стройки</a>
+              <div class="button-catalog-container pink-icon">
+                <h3>Техника</h3>
+                <a class="button-catalog-item button-pink" href="#">для стройки</a>
+              </div>
             </li>
             <li class="catalog-item icon-4">
-              <h3>Скидки 50%</h3>
-              <a class="button-catalog-item button-green" href="#">на 350 товаров</a>
+              <div class="button-catalog-container green-icon">
+                <h3 class="button-fix-container">Скидки 50%</h3>
+                <a class="button-catalog-item button-green" href="#">на 350 товаров</a>
+              </div>
             </li>
             <li class="catalog-item icon-5">
-              <h3>Доставка</h3>
-              <a class="button-catalog-item button-orange" href="#">бесплатно</a>
+              <div class="button-catalog-container orange-icon">
+                <h3>Доставка</h3>
+                <a class="button-catalog-item button-orange" href="#">бесплатно</a>
+              </div>
             </li>
             <li class="catalog-item icon-6">
               <h3>Перфораторы</h3>
@@ -105,54 +115,39 @@
               <button type="button" class="button-red products-header-button"><a href="#">Все популярные товары</a></button>
             </div>
           </div>
+
           <div class="products-cards container">
             <ul class="products-list">
               <li class="products-type">
-                <a href="#">
-                  <p>
-                    <img src="img/bfg9000.png" height="175" width="220" alt="BOSH BFG 9000">
-                  </p>
+                <img class="products-type-first" src="img/bfg9000.png"  alt="BOSH BFG 9000">
+                <div class="products-type-container">
                   <h3>Перфоратор BOSH<br> BFG 9000</h3>
-                </a>
-                <p>
-                  <s>32500 Р.</s>
-                  <button type="button" class="button-red-buy"><a class="products-price" href="#">25500 Р.</a></button>
-                </p>
+                  <p>32500 Р.</p>
+                  <a class="products-price" href="#">25500 Р.</a>
+                </div>
               </li>
               <li class="products-type">
-                <a href="#">
-                  <p>
-                    <img src="img/bfg3000.png" alt="BOSH BFG 3000">
-                  </p>
+                <img class="products-type-second" src="img/bfg3000.png" alt="BOSH BFG 3000">
+                <div class="products-type-container">
                   <h3>Перфоратор BOSH<br> BFG 3000</h3>
-                </a>
-                <p>
-                  <s>22500 Р.</s>
-                  <button type="button" class="button-red-buy"><a class="products-price" href="#">15500 Р.</a></button>
-                </p>
+                  <p>22500 Р.</p>
+                  <a class="products-price" href="#">15500 Р.</a>
+                </div>
+              </li>
+              <li class="products-type">               
+                <img class="products-type-third" src="img/bfg6000.png" alt="BOSH BFG 6000">
+                <div class="products-type-container">                  
+                  <h3>Перфоратор BOSH<br> BFG 6000</h3>                
+                  <p>30500 Р.</p>
+                  <a class="products-price" href="#">22500 Р.</a>
+                </div>
               </li>
               <li class="products-type">
-                <a href="#">
-                  <p>
-                    <img src="img/bfg6000.png" alt="BOSH BFG 6000">
-                  </p>
-                  <h3>Перфоратор BOSH<br> BFG 6000</h3>
-                </a>
-                <p>
-                  <s>30500 Р.</s>
-                  <button type="button" class="button-red-buy"><a class="products-price" href="#">22500 Р.</a></button>
-                </p>
-              </li>
-              <li class="products-type">
-                <a href="#">
-                  <p>
-                    <img src="img/bfg2000.png" alt="BOSH BFG 2000">
-                  </p>
-                  <h3>Перфоратор BOSH<br> BFG 2000</h3>
-                </a>
-                <p>
-                  <button type="button" class="button-red-buy"><a class="products-price" href="#">12500 Р.</a></button>
-                </p>
+                <img class="products-type-fourth" src="img/bfg2000.png" alt="BOSH BFG 2000">
+                <div class="products-type-container">
+                  <h3>Перфоратор BOSH<br> BFG 2000</h3>                
+                  <a class="products-price" href="#">12500 Р.</a>    
+                </div>           
               </li>
             </ul>
           </div>    
