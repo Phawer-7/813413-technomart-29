@@ -571,16 +571,6 @@ h1{
    position: relative;
 }
 
-.slider-style h3{
-   margin: 0;
-   padding: 23px 0px 0 24px;
-}
-
-.slider-style p{
-   margin: 0;
-   padding: 6px 0 0 24px;
-}
-
 .button-red-slider{
    display: block;
    background-color: var(--basic-red);
@@ -588,36 +578,13 @@ h1{
    width: 192px;
    text-align: center;
    padding: 10px 0;
-   margin: 115px 0px 0 25px;
+   margin: 114px 0px 0 25px;
 }
 
 .button-red-slider:hover{
    background-color: var(--basic-red-hover);
 }
 
-.arrow-right::after{
-   content: "";
-   width: 22px;
-   height: 40px;
-   background-image: url(../img/shaperight.svg);
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   position: absolute;
-   top: 46%;
-   left: 93%;
-}
-
-.arrow-left::before{
-   content: "";
-   width: 22px;
-   height: 40px;
-   background-image: url(../img/shapeleft.svg);
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   position: absolute;
-   top: 46%;
-   left: 4%;
-}
 
 .catalog-item {
    width: 300px;
@@ -666,26 +633,71 @@ h1{
    background-color: var(--basic-light-orange);
 }
 
-.catalog-item:last-child{
+.slider-style{
+   height: 266px;
+   width: 620px;
+}
+
+.slide-wrapper-1{
    height: 266px;
    width: 620px;
    background-image: url(../img/perforator1.jpg);
 }
 
-.catalog-item:last-child h3 {
+.slider-style:last-child h3 {
    color: var(--basic-white);
    text-transform: uppercase;
    font-size: 36px;
    font-weight: bold;
    line-height: 36px;
+   margin: 0;
+   padding: 23px 0px 0 24px;
 }
 
-.catalog-item:last-child p{
+.slider-style:last-child p{
    color: var(--basic-white);
    font-weight: normal;
    font-style: normal;
    font-size: 18px;
    line-height: 24px;
+   margin: 0;
+   padding: 6px 0 0 24px;
+}
+
+.slide-wrapper-2{
+   height: 266px;
+   width: 620px;
+   background-image: url(../img/perforator2.jpg);
+}
+
+.slider-control{
+   position: absolute;
+   top: 80%;
+   left: 47%;
+}
+
+.slider-control button{
+   padding: 0;
+   width: 10px;
+   height: 10px;
+   background-color: var(--basic-white);
+   border: 2px solid var(--basic-white);
+   border-radius: 50%;
+   cursor: pointer;
+   margin: 0 3px;
+   
+}
+
+.slide{
+   display: none;
+}
+
+.current button{
+   background: var(--basic-red);
+}
+
+.slide-current{
+   display: block;
 }
 
 /* Кнопки первой секции каталога*/
@@ -838,6 +850,31 @@ h1{
    padding: 10px 36px;
 }
 
+.button-next,
+.button-prev{
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   border: 0;
+   padding: 0;
+   background-image: none; 
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.button-next{
+   background-image: url("../img/next.svg");
+   top: 46%;
+   left: 93%;
+}
+
+.button-prev{
+   background-image: url("../img/prev.svg");
+   top: 46%;
+   left: 4%;
+}
 
 /* Стилизация красных кнопок */
 .button-red {
@@ -1082,7 +1119,7 @@ h1{
    margin:0;
 }
 
-.advantages-item{
+.services-container{
    position: relative;
 }
 
@@ -1098,13 +1135,14 @@ h1{
 
 
 
-.advantages-item::after{
-   content: url("../img/truck.png");
+.services-container::after{
+   content: "";
+   background-image: url("../img/truck.png");
    position: absolute;
-   width: 261px;
-   height: 468px;
-   top: 40%;
-   left: 31%;
+   width: 468px;
+   height: 261px;
+   top: 49%;
+   left: 50%;
    background-position: 0 0px;
    background-repeat: no-repeat;
 }
