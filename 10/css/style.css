@@ -127,9 +127,10 @@ h1{
 
 .header-info-container{
    display: grid;
-   grid-template-columns: 270px 420px 250px;
+   grid-template-columns: 270px 370px 300px;
    padding-top: 42px;
 }
+
 
 .header-info-catalog{
    display: grid;
@@ -162,6 +163,7 @@ h1{
 
 .phone-call{
    margin: 0 auto;
+   margin-left: 52px;
 }
 
 .phone-call p{
@@ -228,7 +230,7 @@ h1{
 
 .login-form-name{
    padding: 0;
-   margin: 0;
+   margin: 3px 0 0 0;
 }
 
 .top-login a{
@@ -242,6 +244,7 @@ h1{
 .top-login{
    display: flex;
    justify-content: flex-end;
+   position: relative;
 }
 
 .top-login li{
@@ -1133,20 +1136,31 @@ h1{
    padding: 70px 0 0 0;
 }
 
+.services-title{
+   display: none;
+}
 
+.services-current{
+   display: block;
+}
 
-.services-container::after{
+.advantages-1{
+   position: relative;
+   z-index: 2;
+}
+
+.advantages-1::after{
    content: "";
    background-image: url("../img/truck.png");
    position: absolute;
    width: 468px;
    height: 261px;
-   top: 49%;
-   left: 50%;
+   top: 40%;
+   left: 31%;
    background-position: 0 0px;
    background-repeat: no-repeat;
+   z-index: 1;
 }
-
 
 .manufacturers-list {
    display: grid;
