@@ -668,14 +668,6 @@ h1{
    margin-right: 70px;
 }
 
-.filter-right-container li:nth-child(3){
-   margin-right: 65px;
-   border-bottom: 1px dotted var(--basic-red);
-}
-
-.filter-right-container li:nth-child(4){
-   border-bottom: 1px dotted var(--basic-red);
-}
 
 .filter-right-container li:nth-child(5){
    background-image: url(../img/icon-up-dir.svg);
@@ -685,6 +677,31 @@ h1{
    height: 11px;
    margin: 4px 0 0 45px;
    padding: 0;
+}
+
+.filter-right-container .right-inner-price:hover,
+.filter-right-container .right-inner-type:hover,
+.filter-right-container .right-inner-function:hover{
+   color: var(--basic-black);
+   opacity: 1;
+   border-bottom: 1px solid var(--basic-red);
+}
+
+.filter-right-container .right-inner-price:active,
+.filter-right-container .right-inner-type:active,
+.filter-right-container .right-inner-function:active{
+   color: var(--basic-red);
+   opacity: 1;
+   border-bottom: none;
+}
+
+.filter-right-container .right-inner-type{
+   margin-right: 65px;
+   border-bottom: 1px dotted var(--basic-red);
+}
+
+.filter-right-container .right-inner-function{
+   border-bottom: 1px dotted var(--basic-red);
 }
 
 .filter-right-container li:last-child{
