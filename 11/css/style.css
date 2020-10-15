@@ -1614,7 +1614,6 @@ h1{
 
 .advantages-1{
    position: relative;
-   z-index: 2;
 }
 
 .advantages-1::after{
@@ -1627,7 +1626,6 @@ h1{
    left: 31%;
    background-position: 0 0px;
    background-repeat: no-repeat;
-   z-index: 1;
 }
 
 .manufacturers-list {
@@ -2078,7 +2076,50 @@ h1{
    padding: 67px 0px 54px 0px;
 }
 
+/* Карта */
 
+.modal {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: auto;
+   display: none;
+   color: var(--basic-black);
+   background-color: var(--basic-extra-light);
+   background-image: url("img/pattern-light.jpg");
+   background-position: 0 0;
+   background-repeat: repeat;
+   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
+}
+
+.modal-map {
+   width: 766px;
+   height: 560px;
+   border: 7px solid white;
+}
+
+.modal-map img {
+   display: block;
+}
+
+.modal-map iframe {
+   border: none;
+}
+
+.visually-hidden{
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
 
 /* Замена цвета иконок*/
