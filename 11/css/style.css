@@ -3,6 +3,7 @@
    --basic-red: #EE3643;
    --basic-red-hover: #CA2C37;
    --basic-red-click: #BA2732;
+   --basic-red-shadow: #b52933;
    --basic-gray:#32425C;
    --basic-gray-profile: #3D546F;
    --basic-gray-dark: #161D29;
@@ -26,6 +27,8 @@
    --basic-green-active: #5FBB2D;
    --basic-lightgreen: #8ED78F;
    --basic-green-price: #00ca74;
+   --basic-green-click: #518534;
+   --basic-green-border: #367315;
    --basic-orange: #FFBF47;
    --basic-light-orange: #FFC047;
    --basic-yellow: #FFD180;
@@ -162,8 +165,15 @@ h1{
    position: relative;
 }
 
-.main-logo:hover{
-   opacity: 0.24;
+.main-logo{
+   padding: 20px 40px 12px 42px;
+   display: inline-block;
+   background-color: var(--basic-red);
+   box-shadow: 0px 4px 0px 0px var(--basic-red-shadow);
+}
+
+.main-logo:active{
+   background-color: var(--basic-red-hover);
 }
 
 .phone-call{
@@ -302,6 +312,25 @@ h1{
    border-radius: 4px;
 }
 
+.bottom-login a:hover{
+   color: var(--basic-red);
+}
+
+.bottom-login li:first-child:hover::after{
+   background-color: var(--basic-red);
+}
+
+.bottom-login a:active{
+   color: var(--basic-gray-border-pagesalt);
+}
+
+.bottom-login li:first-child:active::after{
+   background-color: var(--basic-gray-border-pagesalt);
+}
+
+
+
+
 .login-link,
 .registration-link{
    display: block;
@@ -312,16 +341,14 @@ h1{
    position: relative;
 }
 
-.login-link::before {
-   content: "";
-   width: 20px;
-   height: 17px;
-   background-image: url(../img/icon-login.svg);
-   background-repeat: no-repeat;
-   background-position: 0 0;
+.login-icon{
    position: absolute;
    top: 29%;
    left: 14%;
+}
+
+.login-link:hover path{
+   fill: var(--basic-gray-profile);
 }
 
 .registration-link{
@@ -332,36 +359,37 @@ h1{
    position: relative;
 }
 
-.login-window::after{
-   content: "";
-   display: block;
-   position: absolute;
-   width: 20px;
-   height: 17px;
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   background-image: url("../img/icon-login.svg");  
+.icon-login-catalog{
+   position: absolute; 
    top: 32%;
    left: 88%;
 }
 
-.login-window::before{
-   content: "";
-   display: block;
+.icon-user-catalog{
    position: absolute;
-   width: 20px;
-   height: 17px;
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   background-image: url("../img/icon-user.svg");  
    top: 32%;
    left: 5%;
 }
 
-/* .login-window:hover::after{
-   color: inherit;
-   background: var(--basic-gray-profile);
-} */
+.icon-login-catalog:hover path{
+   fill: var(--basic-gray-profile);
+}
+
+.icon-user-catalog:hover path{
+   fill: var(--basic-gray-profile);
+}
+
+.icon-login-catalog:active path{
+   fill: var(--basic-gray-border-pagesalt);
+}
+
+.icon-user-catalog:active path{
+   fill: var(--basic-gray-border-pagesalt);
+}
+
+.user-name-catalog p:active{
+   color: var(--basic-gray-border-pagesalt);
+}
 
 .user-menu-list a:hover{
    color: var(--basic-red);
@@ -388,6 +416,8 @@ h1{
 .site-navigation{
    display: flex;
    margin: 0;
+   padding: 0 0 0 26px;
+   box-shadow: inset 0px -5px 0px var(--basic-gray-darker);
 }
 
 .main-navigation {
@@ -486,6 +516,10 @@ h1{
    color: var(--basic-white-opacity-half);
 }
 /* Стилизация кнопок субменю-навигации header */
+
+.site-navigation li{
+   padding-left: 2px;
+}
 
 .site-navigation a{
    display:block;
@@ -1351,8 +1385,7 @@ h1{
 .button-red {
    background: var(--basic-red);
    border: 0;
-   margin-left: auto;
-   padding: 11px 24px 9px;
+
 }
 
 .button-red:hover{
@@ -1425,18 +1458,21 @@ h1{
 
 .contacts-address h2{
    margin: 0;
+   padding: 3px 0px 0 0px;
+   font-weight: 400;
 }
 
 .contacts-info h2{
    margin: 0;
-   letter-spacing: -1px;
+   font-weight: 400;
+   padding: 2px 0 1px 0px;
 }
 
 .products-list{
    display: grid;
    grid-template-columns: repeat(4,220px);
    gap: 20px;
-   padding: 20px 0 70px 0;
+   padding: 14px 0 70px 0;
    margin:0;
 }
 
@@ -1534,6 +1570,103 @@ h1{
    margin: 29px 54px 23px 39px;
 }
 
+.products-type .products-type-second:hover{
+   opacity: 1;
+}
+
+.wrapper-buttons .buy-button,
+.wrapper-buttons .bookmark-button{
+   font-family: "Cuprum";
+   font-size: 14px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+
+.wrapper-buttons .buy-button{
+   color: var(--basic-white);
+}
+
+.wrapper-buttons .bookmark-button{
+   color: var(--basic-black);
+}
+
+.wrapper-buttons{
+   margin-top: 40px;
+   margin-bottom: 40px;
+   display: none;
+}
+
+.buy-button{
+   display: block;
+   margin: 0 auto;
+   padding: 10px 44px 10px 49px;
+   background-color: var(--basic-green);
+   position: relative;
+   border: 0;
+   border-radius: 2px;
+   box-shadow: inset 0px -3px 0px var(--basic-green-border);
+}
+
+.buy-button:hover{
+   background-color: var(--basic-green-active);
+}
+
+.buy-button:active{
+   background-color: var(--basic-green-click);
+}
+
+.buy-button::before{
+   content: "";
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   top: 24%;
+   left: 21%;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-image: url("../img/icon-cart.svg");
+   opacity: 0.3;
+}
+
+.bookmark-button{
+   display: block;
+   margin: 0 auto;
+   margin-top: 8px;
+   padding: 10px 31px 6px 31px;
+   border: 3px solid var(--basic-green);
+   box-sizing: border-box;
+   border-radius: 2px;
+}
+
+.bookmark-button:hover{
+   border: 3px solid var(--basic-gray);
+   color: var(--basic-gray);
+   
+}
+
+.bookmark-button:active{
+   opacity: 0.5;
+}
+
+/* Изменение состояния при наведении на карточку товара */
+
+.products-type:hover{
+   box-shadow: 0 0 10px var(--basic-black-opacity); 
+}
+
+.products-type:hover .wrapper-buttons{
+   display: inline-block;
+}
+
+.products-type:hover .products-type-first,
+.products-type:hover .products-type-second,
+.products-type:hover .products-type-third,
+.products-type:hover .products-type-fourth{
+   display: none;
+}
+
+/* --- */
+
 .products-type-third{
    margin: 22px 43px 14px 33px;
 }
@@ -1557,6 +1690,7 @@ h1{
 .services-logo p{
    margin: 0;
    padding: 0;
+   font-weight: 400;
 }
 
 .services-logo{
@@ -1596,12 +1730,16 @@ h1{
 
 .advantages-item h3{
    color: var(--basic-gray-lighter);
-   margin:-4px 0 0px 37px
+   margin:-4px 0 0px 37px;
+   font-weight: 400;
 }
 
-.services-list,
+.services-list{
+   padding: 66px 0 0 0;
+}
+
 .advantages-item{
-   padding: 70px 0 0 0;
+   padding: 70px 0px 0px 3px;
 }
 
 .services-title{
@@ -1648,6 +1786,10 @@ h1{
 .manufacturers-item:hover{
    border: 1px solid #EAEAEA;
    box-shadow: 0 0 10px var(--basic-black-opacity);
+}
+
+.manufacturers-item:active{
+   opacity: 0.1;
 }
 
 .manufacturers-item img{
@@ -1798,7 +1940,7 @@ h1{
 .first-footer{
    display: grid;
    grid-template-columns: 40% 60%;
-   padding: 0 0 51px 0;
+   padding: 0px 0 74px 0;
 }
 
 .footer-navigation{
@@ -1812,6 +1954,7 @@ h1{
 
 .page-footer{
    background-color: var(--basic-gray-lighter);
+   margin-top: -2px;
 }
 
 .footer-logo {
@@ -1825,6 +1968,8 @@ h1{
 
 .footer-address{
    color: var(--basic-white);
+   margin: 0;
+   padding: 26px 0px 0 2px;
 }
 
 .footer-address,
@@ -1848,16 +1993,16 @@ h1{
    color: var(--basic-yellow);
 }
 
-.footer-white-link li:first-child:hover,
-.footer-white-link li:nth-child(2):hover,
-.footer-white-link li:nth-child(3):hover,
-.footer-white-link li:nth-child(4):hover,
-.footer-white-link li:last-child:hover,
-.footer-yellow-link li:first-child:hover,
-.footer-yellow-link li:nth-child(2):hover,
-.footer-yellow-link li:nth-child(3):hover,
-.footer-yellow-link li:nth-child(4):hover,
-.footer-yellow-link li:last-child:hover {
+.footer-white li:first-child:hover,
+.footer-white li:nth-child(2):hover,
+.footer-white li:nth-child(3):hover,
+.footer-white li:nth-child(4):hover,
+.footer-white li:last-child:hover,
+.footer-yellow li:first-child:hover,
+.footer-yellow li:nth-child(2):hover,
+.footer-yellow li:nth-child(3):hover,
+.footer-yellow li:nth-child(4):hover,
+.footer-yellow li:last-child:hover {
    text-decoration: underline;
 }
 
@@ -1952,32 +2097,35 @@ h1{
 }
 
 .products-header{
-   margin-top: 59px;
+   margin-top: 55px;
 }
 
 .perforators-header{
    margin:0 auto;
 }
 
-.header-logo-icon:hover{
-   opacity: 0.24;
+.header-logo-icon .logo-link{
+   padding: 11px 51px 5px 56px;
+   display: block;
+   background-color: var(--basic-red);
+   box-shadow: 0px 4px 0px 0px var(--basic-red-shadow);
 }
 
-.header-logo-icon img{
-   box-shadow: 0px 4px 0px 0px #b52933;
+.header-logo-icon .logo-link:active{
+   background-color: var(--basic-red-click);
 }
 
-.footer-white-link,
-.footer-yellow-link {
+.footer-white,
+.footer-yellow {
    display: flex;
    justify-content: flex-end;
 }
 
-.footer-white-link li{
+.footer-white li{
    margin-left: 58px;
 }
 
-.footer-yellow-link li{
+.footer-yellow li{
    margin-left: 58px;;
 }
 
@@ -2120,6 +2268,14 @@ h1{
    clip-path: inset(100%);
    clip: rect(0 0 0 0);
    overflow: hidden;
+}
+
+.social-button:hover path:first-child{
+   fill: var(--basic-red);
+}
+
+.social-button:hover path:last-child{
+   fill: var(--basic-white);
 }
 
 /* Замена цвета иконок*/
