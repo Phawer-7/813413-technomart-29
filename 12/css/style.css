@@ -1757,9 +1757,12 @@ h1{
    display: block;
 }
 
-.advantages-1{
+.advantages-1,
+.advantages-2,
+.advantages-3{
    position: relative;
 }
+
 
 .advantages-1::after{
    content: "";
@@ -1771,6 +1774,39 @@ h1{
    left: 31%;
    background-position: 0 0px;
    background-repeat: no-repeat;
+}
+
+.advantages-2::after{
+   content: "";
+   background-image: url("../img/guarantee-service-img.png");
+   position: absolute;
+   width: 468px;
+   height: 261px;
+   top: 32%;
+   left: 46%;
+   background-position: 0 0px;
+   background-repeat: no-repeat;
+}
+
+.advantages-3::after{
+   content: "";
+   background-image: url("../img/credit-service-img.png");
+   position: absolute;
+   width: 468px;
+   height: 261px;
+   top: 30%;
+   left: 32%;
+   background-position: 0 0px;
+   background-repeat: no-repeat;
+}
+
+.application-button{
+   background-color: var(--basic-red);
+   padding: 7px 40px 7px 40px;
+   text-transform: uppercase;
+   color: var(--basic-white);
+   margin: 23px 0 0 41px;
+   display: inline-block;
 }
 
 .manufacturers-list {
@@ -2043,11 +2079,11 @@ h1{
 }
 
 .footer-social{
-   padding: 18px 0 0 80px;
+   margin: 18px 0 0 80px;
 }
 
 .feedback-container{
-   padding: 17px 14px 0px 60px;
+   margin: 17px 14px 0px 60px;
 }
 
 .footer-feedback a,
