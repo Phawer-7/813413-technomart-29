@@ -237,6 +237,7 @@ h1{
 
 .user-menu-list{
    display: flex;
+   flex-wrap: wrap;
    margin: 0;
    padding: 0;
    margin-top: 6px;
@@ -258,6 +259,7 @@ h1{
 
 .top-login{
    display: flex;
+   flex-wrap: wrap;
    justify-content: flex-end;
    position: relative;
 }
@@ -415,9 +417,11 @@ h1{
 
 .site-navigation{
    display: flex;
+   flex-wrap: wrap;
    margin: 0;
    padding: 0 0 0 26px;
    box-shadow: inset 0px -5px 0px var(--basic-gray-darker);
+   
 }
 
 .main-navigation {
@@ -784,7 +788,7 @@ h1{
    text-transform: uppercase;
 }
 
-.filter legend{
+.filter h3{
    font-weight: 700;
    font-size: 17px;
 }
@@ -971,7 +975,7 @@ h1{
    position: relative;
 }
 
-.radio-container legend{
+.radio-container h3{
    font-size: 17px;
    line-height: 24px;
    text-transform: uppercase;
@@ -1248,8 +1252,10 @@ h1{
 .contacts-button{
    font-size: 14px;
    line-height: 18px;
+   font-weight: 400;
    color: var(--basic-white);
    text-transform: uppercase;
+   display: inline-block;
 }
 
 .button-catalog-container{
@@ -1398,6 +1404,7 @@ h1{
 
 .inner-container{
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    background-color: var(--basic-peach);
    padding: 30px 15px 30px 29px;
@@ -1750,9 +1757,12 @@ h1{
    display: block;
 }
 
-.advantages-1{
+.advantages-1,
+.advantages-2,
+.advantages-3{
    position: relative;
 }
+
 
 .advantages-1::after{
    content: "";
@@ -1764,6 +1774,39 @@ h1{
    left: 31%;
    background-position: 0 0px;
    background-repeat: no-repeat;
+}
+
+.advantages-2::after{
+   content: "";
+   background-image: url("../img/guarantee-service-img.png");
+   position: absolute;
+   width: 468px;
+   height: 261px;
+   top: 32%;
+   left: 46%;
+   background-position: 0 0px;
+   background-repeat: no-repeat;
+}
+
+.advantages-3::after{
+   content: "";
+   background-image: url("../img/credit-service-img.png");
+   position: absolute;
+   width: 468px;
+   height: 261px;
+   top: 30%;
+   left: 32%;
+   background-position: 0 0px;
+   background-repeat: no-repeat;
+}
+
+.application-button{
+   background-color: var(--basic-red);
+   padding: 7px 40px 7px 40px;
+   text-transform: uppercase;
+   color: var(--basic-white);
+   margin: 23px 0 0 41px;
+   display: inline-block;
 }
 
 .manufacturers-list {
@@ -1886,9 +1929,8 @@ h1{
 }
 
 .button-info {
-   width: 220px;
-   height: 38px;
-   margin-top: 22px;
+   padding: 11px 40px 9px 40px;
+   margin-top: 20px;
 }
 
 .contacts-company li{
@@ -1924,15 +1966,14 @@ h1{
 }
 
 .contacts-button {
-   width: 300px;
-   height: 38px;
+   padding: 10px 60px 9px 63px;
    margin-left: 2px;;
 }
 
 .contacts-container{
    display: grid;
    grid-template-columns: 60% 40%;
-   padding: 70px 0;
+   padding: 70px 0 73px 0;
 }
 
 /* footer */
@@ -2034,15 +2075,15 @@ h1{
 
 .rights-text{
    margin: 0;
-   padding-top: 37px;
+   padding-top: 34px;
 }
 
 .footer-social{
-   padding: 20px 0 0 80px;
+   margin: 18px 0 0 80px;
 }
 
 .feedback-container{
-   padding: 21px 20px 0 0;
+   margin: 17px 14px 0px 60px;
 }
 
 .footer-feedback a,
@@ -2081,6 +2122,7 @@ h1{
 .social-container,
 .feedback-container{
    display: flex;
+   flex-wrap: wrap;
 }
 
 .feedback-container{
@@ -2115,18 +2157,24 @@ h1{
    background-color: var(--basic-red-click);
 }
 
+.footer-white{
+   margin: 0;
+   padding: 0;
+}
+
 .footer-white,
 .footer-yellow {
    display: flex;
+   flex-wrap: wrap;
    justify-content: flex-end;
 }
 
-.footer-white li{
-   margin-left: 58px;
+.footer-white li:not(:last-child){
+   margin-right: 59px;
 }
 
-.footer-yellow li{
-   margin-left: 58px;;
+.footer-yellow li:not(:last-child){
+   margin-right: 59px;;
 }
 
 .yellow-container {
